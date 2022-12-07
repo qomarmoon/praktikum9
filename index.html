@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Java Script</title>
+    <script>
+        function jumlah() {
+            let bilangan_1 = document.getElementById("bilangan1").value;
+            let bilangan_2 = document.getElementById("bilangan2").value;
+            
+            let hasil = parseInt(bilangan_1) + parseInt(bilangan_2);
+            console.log(hasil);
+
+            let span = document.getElementById("hasil");
+            span.innerHTML = hasil
+        }
+    </script>
+</head>
+
+<body>
+    <a href="index.html">Penjumlahan</a> |
+    <a href="index2.html">Keliling & Luas Lingkaran</a> |
+    <a href="index3.html">Menghitung Kurs Rupiah</a> | 
+    Biaya Parkir
+
+    <br>
+    <hr>
+    <br>
+    <input type="number" id="bilangan1">
+    <br>
+    +
+    <br>
+    <input type="number" id="bilangan2">
+    <br>
+    <input type="submit" onclick="jumlah()">
+    <br>
+    =
+    <br>
+    <span id="hasil"></span>
+</body>
+
+</html>
